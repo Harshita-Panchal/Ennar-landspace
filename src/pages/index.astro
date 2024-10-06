@@ -1,12 +1,65 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from '../components/Card.astro';
 import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<NavBar  />
 	<main>
+		<div class=" bg-[url('src/assets/images/landscaping-process-bg.png')] h-[920px] w-full">
+			<div class="flex flex-col justify-center h-full px-20">
+				<h1 class="text-secondary-green text-5xl leading-[75.2px]">Transforming Spaces, Inspiring Nature!</h1>
+				<p  class="text-secondary-green text-[27px]">Pioneering India's landscape industry since 1998 </p>
+				<button class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-7">
+				Explore our work
+				<img src="src/assets/images/arrow-right-up-broken.svg" alt="">
+				</button>
+			</div>
+		</div>
+		<div class="flex justify-between px-20 mt-10">
+			<div class="lg:max-w-md">
+				<h2 class="text-primary-green font-medium text-4xl leading-[57px] mb-3.5">About Us</h2>
+				<p class="text-xl font-light text-secondary-green leading-8">Established in 1998, New Ennar Landscape 
+					has been a pioneer in India's
+					landscaping 
+					industry, becoming one of the first 
+					companies to introduce
+					professional 
+					landscape design and construction on a 
+					large scale.
+					<br> <br>
+					Headquartered in Bangalore, we have been 
+					shaping indoor and outdoor
+					environments 
+					since before the IT sector boom, working 
+					with some of the
+					world's most renowned 
+					companies across various sectors, including
+					technology, hospitality, and real estate.</p>
+					<button class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-10">
+						Learn More
+					</button>
+			</div>
+			<div class="flex-shrink-0 lg:min-w-96">
+				<img src="src/assets/images/home-about-us.png" alt="" class="w-full">
+			</div>
+		</div>
+		<div class="bg-light-taupe lg:px-20 px-10 py-6">
+			<h1 class="text-secondary-green text-4xl font-medium leading-10">Our Clients</h1>
+			<p class="text-secondary-green font-light text-xl ">Trusted by leaders across industries, creating iconic landscapes together.</p>
+
+			<!-- <div class="flex">
+				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
+					<img src="src/assets/images/microsoft-logo.svg" alt="">
+				</div>
+				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
+					<img src="src/assets/images/microsoft-logo.svg" alt="">
+				</div>
+				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
+					<img src="src/assets/images/cisco-logo.svg" alt="">
+				</div>
+			</div> -->
+		</div>
 	</main>
 </Layout>
 

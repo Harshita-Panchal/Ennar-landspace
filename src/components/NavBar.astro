@@ -1,15 +1,19 @@
 ---
 ---
 
-<nav class="z-20 flex  items-center relative " id="nav-bar">
+<nav class="z-20 flex  items-center justify-between relative h-[104px] lg:px-20 px-10" id="nav-bar">
 <div>
   <img src="src/assets/images/ennar-landscape-logo.svg" alt="">
 </div>
-<div>
-  <a href="" class="nav-link">Home</a>
-  <a href="" class="nav-link">Portfolio</a>
-  <a href="" class="nav-link">About Us</a>
+<div class="flex gap-x-10">
+  <a href="/" class="nav-link">Home</a>
+  <a href="/portfolio" class="nav-link">Portfolio</a>
+  <a href="/about-us" class="nav-link">About Us</a>
 </div>
+<button class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 ">
+  Contact Us
+  <img src="src/assets/images/arrow-right-up-broken.svg" alt="">
+</button>
 </nav>
 
 <style>
@@ -48,7 +52,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      background-image: url("/images/landing/active-link.svg");
+      text-decoration: underline;
     }
   }
 </style>
