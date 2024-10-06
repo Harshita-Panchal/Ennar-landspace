@@ -1,23 +1,31 @@
 ---
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
+	footerClasses?: string;
+	classes?: string;
 }
 
-const { title } = Astro.props;
+const { title, footerClasses , classes } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
+	<!-- <head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-	</head>
+	</head> -->
 	<body>
-		<slot />
+		<slot name="head" slot="head" />
+		<slot name="nav" />
+		<div class={`relative z-10 bg-white ${classes}`}>
+		  <slot />
+		</div>
+		<Footer footerClasses={footerClasses} />
 	</body>
 </html>
 <style is:global>
@@ -34,7 +42,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: white;
 	}
 	code {
 		font-family:

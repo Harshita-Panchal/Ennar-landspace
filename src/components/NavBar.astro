@@ -1,0 +1,54 @@
+---
+---
+
+<nav class="z-20 flex  items-center relative " id="nav-bar">
+<div>
+  <img src="src/assets/images/ennar-landscape-logo.svg" alt="">
+</div>
+<div>
+  <a href="" class="nav-link">Home</a>
+  <a href="" class="nav-link">Portfolio</a>
+  <a href="" class="nav-link">About Us</a>
+</div>
+</nav>
+
+<style>
+   @media (max-width: 768px) {
+    .logo {
+      @apply ml-2;
+    } 
+  }
+
+  .nav-link {
+    @apply text-xl text-secondary-green ;
+
+    &:hover {
+      @apply text-primary-green;
+    }
+  }
+
+  @screen lg {
+    .logo {
+      position: relative;
+    }
+
+    .nav-link.nuxt-link-active {
+      @apply text-primary-green relative;
+    }
+
+    .nav-link.nuxt-link-active::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10%;
+      width: 6px;
+      height: 6px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("/images/landing/active-link.svg");
+    }
+  }
+</style>
