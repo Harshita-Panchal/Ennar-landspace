@@ -4,65 +4,123 @@ import NavBar from '../components/NavBar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<NavBar  />
+	<NavBar />
 	<main>
 		<div class=" bg-[url('src/assets/images/landscaping-process-bg.png')] h-[920px] w-full">
 			<div class="flex flex-col justify-center h-full px-20">
 				<h1 class="text-secondary-green text-5xl leading-[75.2px]">Transforming Spaces, Inspiring Nature!</h1>
-				<p  class="text-secondary-green text-[27px]">Pioneering India's landscape industry since 1998 </p>
-				<button class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-7">
-				Explore our work
-				<img src="src/assets/images/arrow-right-up-broken.svg" alt="">
+				<p class="text-secondary-green text-[27px]">Pioneering India's landscape industry since 1998 </p>
+				<button
+					class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-7">
+					Explore our work
+					<img src="src/assets/images/arrow-right-up-broken.svg" alt="">
 				</button>
 			</div>
 		</div>
 		<div class="flex justify-between px-20 mt-10">
 			<div class="lg:max-w-md">
 				<h2 class="text-primary-green font-medium text-4xl leading-[57px] mb-3.5">About Us</h2>
-				<p class="text-xl font-light text-secondary-green leading-8">Established in 1998, New Ennar Landscape 
+				<p class="text-xl font-light text-secondary-green leading-8">Established in 1998, New Ennar Landscape
 					has been a pioneer in India's
-					landscaping 
-					industry, becoming one of the first 
+					landscaping
+					industry, becoming one of the first
 					companies to introduce
-					professional 
-					landscape design and construction on a 
+					professional
+					landscape design and construction on a
 					large scale.
 					<br> <br>
-					Headquartered in Bangalore, we have been 
+					Headquartered in Bangalore, we have been
 					shaping indoor and outdoor
-					environments 
-					since before the IT sector boom, working 
+					environments
+					since before the IT sector boom, working
 					with some of the
-					world's most renowned 
+					world's most renowned
 					companies across various sectors, including
 					technology, hospitality, and real estate.</p>
-					<button class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-10">
-						Learn More
-					</button>
+				<button
+					class="bg-soft-terracotta text-ghost-white text-xl font-medium rounded-[10px] p-3.5 flex items-center gap-1.5 w-fit mt-10">
+					Learn More
+				</button>
 			</div>
-			<div class="flex-shrink-0 lg:min-w-96">
-				<img src="src/assets/images/home-about-us.png" alt="" class="w-full">
+			<div class="flex-shrink-0 xl:w-[738px] rounded-2xl lg:w-[600px] h-[616px] bg-[url('src/assets/images/home-about-us.png')] pb-6 flex justify-center items-end">
+				<!-- <img src="src/assets/images/home-about-us.png" alt="" class="w-full"> -->
+				<div class="bg-[#F8F8FF59] flex lg:gap-x-11 gap-x-8 rounded-[10px] px-6 py-3 w-fit">
+					<div>
+						<p class="text-ghost-white text-5xl font-medium ">20+</p>
+						<p class="text-ghost-white text-base font-medium ">Happy Clients</p>
+					</div>
+					<div>
+						<p class="text-ghost-white text-5xl font-medium">100+</p>
+						<p class="text-ghost-white text-base font-medium ">Projects Completed</p>
+					</div>
+					<div>
+						<p class="text-ghost-white text-5xl font-medium">25+</p>
+						<p class="text-ghost-white text-base font-medium">Years Of Experience</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="bg-light-taupe lg:px-20 px-10 py-6">
+		<div class="bg-light-taupe lg:px-20 px-10 py-6 mt-14">
 			<h1 class="text-secondary-green text-4xl font-medium leading-10">Our Clients</h1>
-			<p class="text-secondary-green font-light text-xl ">Trusted by leaders across industries, creating iconic landscapes together.</p>
+			<p class="text-secondary-green font-light text-xl ">Trusted by leaders across industries, creating iconic
+				landscapes together.</p>
 
-			<!-- <div class="flex">
-				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
+			<div class="flex  w-full">
+				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center lg:min-w-80">
 					<img src="src/assets/images/microsoft-logo.svg" alt="">
 				</div>
 				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
 					<img src="src/assets/images/microsoft-logo.svg" alt="">
 				</div>
-				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center">
+				<div class="bg-ghost-white rounded-2xl h-40 flex justify-center items-center lg:min-w-80">
 					<img src="src/assets/images/cisco-logo.svg" alt="">
 				</div>
-			</div> -->
+			</div>
 		</div>
+
+		<div class="lg:px-20">
+			<h2 class="text-primary-green text-4xl font-medium">Our Work</h2>
+			<p class="text-[#1E1E1E] text-xl font-light ">Bringing innovation to every experience.</p>
+			<div class="grid grid-cols-6 gap-x-8 gap-y-5">
+
+				<div class="col-start-1 col-span-3 bg-white-smoke rounded-2xl lg:h-[374px] px-7 pb-4 flex flex-col justify-end">
+					<p class="text-2xl ">Providence, Hyderabad</p>
+					<p class="text-base font-light ">Design  |  Build</p>
+				</div>
+				<div class=" bg-white-smoke rounded-2xl lg:h-[374px] px-7 pb-4 flex flex-col justify-end">
+					<p class="text-2xl ">Halma</p>
+					<p class="text-base font-light ">Design  |  Build</p>
+				</div>
+				<div class="col-end-7 col-span-2 bg-white-smoke rounded-2xl lg:h-[374px] px-7 pb-4 flex flex-col justify-end">
+					<p class="text-2xl ">Microsoft, Hyderabad</p>
+					<p class="text-base font-light ">Design  |  Build</p>
+				</div>
+				<div class="col-start-1 col-end-3 bg-white-smoke rounded-2xl lg:h-[374px] px-7 pb-4 flex flex-col justify-end">
+					<p class="text-2xl ">Cisco</p>
+					<p class="text-base font-light ">Design  |  Build</p>
+				</div>
+				<div class="col-start-3 col-end-7 bg-white-smoke rounded-2xl lg:h-[374px] px-7 pb-4 flex flex-col justify-end">
+					<p class="text-2xl ">Microsoft, Bangalore</p>
+					<p class="text-base font-light ">Design  |  Build</p></div>
+			</div>
+		</div>
+
+		<!-- <div>
+			<h2 class="text-primary-green font-medium text-4xl">Testimonials</h2>
+			<p class="text-[#1E1E1E] text-xl font-light">Voices of impact!</p>
+			<div class="grid grid-rows-2 grid-cols-3  gap-4">
+				<div class="row-span-3 bg-light-taupe rounded-2xl">01</div>
+				<div class="row-span-4 bg-light-taupe rounded-2xl">02</div>
+				<div class="row-span-3 bg-light-taupe rounded-2xl">03</div>
+				<div class="row-span-3	 bg-light-taupe rounded-2xl">01</div>
+				<div class="row-span-4 bg-light-taupe rounded-2xl">02</div>
+				<div class="row-span-3 bg-light-taupe rounded-2xl">03</div>
+
+			  </div>
+		</div> -->
 	</main>
 </Layout>
 
-<style >
-	
+<style>
+
 </style>

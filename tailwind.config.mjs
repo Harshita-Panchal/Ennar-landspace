@@ -9,6 +9,7 @@ export default {
         "light-taupe": "#D8CDAF",
         "soft-terracotta": "#BA7464",
         "ghost-white": "#F8F8FF",
+        "white-smoke" :"#E9E9E9"
       },
     },
   },
